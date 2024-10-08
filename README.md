@@ -1,1 +1,2 @@
 # MovieQuiz
+The goal of the game is to guess which movie an actor has appeard in. An image of actor will appear and under that 4 images of different movies. If you pick the correct one you get a point.
