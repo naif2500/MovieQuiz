@@ -44,16 +44,16 @@
     <div class="game-container">
         <h1>Guess the Actor's Movie!</h1>
         <div id="score">Score: 0</div>
-        <img id="actor-image" src="" alt="Actor Image">
+        <img id="actor-image" src="" >
         <div class="options">
-            <img class="option" src="" alt="Option 1" onclick="checkAnswer(0)">
-            <img class="option" src="" alt="Option 2" onclick="checkAnswer(1)">
-            <img class="option" src="" alt="Option 3" onclick="checkAnswer(2)">
-            <img class="option" src="" alt="Option 4" onclick="checkAnswer(3)">
+            <img class="option" src="" onclick="checkAnswer(0)">
+            <img class="option" src="" onclick="checkAnswer(1)">
+            <img class="option" src="" onclick="checkAnswer(2)">
+            <img class="option" src="" onclick="checkAnswer(3)">
         </div>
     </div>
     <script>
-        const apiKey = 'baf47d5a8aa384f5506a9c9a1af8c7cd';
+        const apiKey = process.env.NEXT_PUBLIC_TMDB_API_KEY;
         let score = 0;
         let correctIndex = 0;
 
